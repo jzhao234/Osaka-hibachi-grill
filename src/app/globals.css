@@ -32,3 +32,7 @@ body {
 .jakarta {
   font-family: var(--font-jakarta);
 }
+
+.luckiest {
+  font-family: var(--font-luckiest);
+}

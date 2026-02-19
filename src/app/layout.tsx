@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Manrope, Plus_Jakarta_Sans } from "next/font/google";
+import { Geist, Geist_Mono, Manrope, Plus_Jakarta_Sans, Luckiest_Guy} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
@@ -20,7 +20,13 @@ const manrope = Manrope({
 })
 
 const jakarta = Plus_Jakarta_Sans({
-  variable: "--font-jakarta:",
+  variable: "--font-jakarta",
+  subsets: ["latin"],
+})
+
+const luckiest = Luckiest_Guy({
+  variable: "--font-luckiest",
+  weight: "400",
   subsets: ["latin"],
 })
 
@@ -36,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${jakarta.variable} ${manrope.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${jakarta.variable} ${manrope.variable} ${luckiest.variable} antialiased`}>
           <Navbar/>
           <main className="min-h-screen flex flex-col bg-white text-black"> {children} </main>
           <Footer/>
