@@ -36,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${jakarta.variable} ${manrope.variable} antialiased`}>
           <Navbar/>
           <main className="min-h-screen flex flex-col bg-white text-black"> {children} </main>
           <Footer/>
