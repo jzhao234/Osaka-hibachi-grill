@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Manrope } from "next/font/google";
+import { Geist, Geist_Mono, Manrope, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 
 const manrope = Manrope({
   variable: "--font-manrope",
+  subsets: ["latin"],
+})
+
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta:",
   subsets: ["latin"],
 })
 

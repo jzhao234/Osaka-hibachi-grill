@@ -28,3 +28,7 @@ body {
 .manrope {
   font-family: var(--font-manrope);
 }
+
+.jakarta {
+  font-family: var(--font-jakarta);
+}
